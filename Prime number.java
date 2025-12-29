@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class Primenumber{
     public static void main(String[] args){
-        while(true){
     Scanner scanner = new Scanner(System.in);
+        while(true){
     System.out.print("Enter a number:-");
     int number = scanner.nextInt();
     if (isPrime(number)){
@@ -14,8 +14,9 @@ public class Primenumber{
     }
             System.out.print("Do you want to check another number?(yes/no): ");
             String choice = scanner.next();
-            if(choice.equalsIgnoreCase("no"));
+            if(choice.equalsIgnoreCase("no")){
             break;
+            }
         }        
     }
     public static boolean isPrime(int num){
