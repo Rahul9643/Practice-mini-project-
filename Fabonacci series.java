@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class fabonacciseries{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        while(true){
         System.out.println("Enter number of terms:- ");
         
         int number = sc.nextInt();
@@ -17,5 +18,13 @@ public class fabonacciseries{
          
             
         }
+        System.out.println();
+        System.out.println("Do you want another fabonacci series? (yes/no)");
+        String choice = sc.next();
+        if(choice.equalsIgnoreCase("no")){
+            break;
+        }
+        }
+        System.out.println("Program Ended. Thank you");
     }
 }
