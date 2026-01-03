@@ -1,5 +1,5 @@
-//Alternative tarika jo while if loop ki tarah
-//hi kaam karta hai//
+//Alternative Tarika Jo While If Loop Ki tarah
+//Hi Kaam Karta Hai//
 
 
 Scanner sc = new Scanner(System.in);
@@ -15,3 +15,20 @@ do {
 } while (choice.equalsIgnoreCase("yes"));
 
 System.out.println("Program ended");
+
+
+// EK AUR TARIKA
+
+Scanner sc = new Scanner(System.in);
+String choice = "yes";
+
+while (choice.equalsIgnoreCase("yes")) {
+
+    // APNA CODE
+
+    System.out.print("Continue? (yes/no): ");
+    choice = sc.next();
+}
+
+System.out.println("Program ended");
+
