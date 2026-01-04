@@ -8,7 +8,7 @@ public class WordGuessGame {
    String choice;
 
         
-   String[] words = {"JAVA", "CODE", "GAME", "LOOP", "DATA"};
+   String[] words = {"JAVA", "CODE", "GAME", "LOOP", "DATA", "RAHUL", "GITHUB"};
 
     do {
             
