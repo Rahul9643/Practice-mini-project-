@@ -14,12 +14,12 @@ public class Factorial{
             }
             System.out.println("Factorial number is :- "+ factorial);
             
-          System.out.println("another number(yes/no)") ;
+          System.out.println("Check another number factorial?(yes/no)") ;
           choice = sc.next();
           
         }
         while(choice.equalsIgnoreCase("yes"));
-        System.out.println("program ended");   
+        System.out.println("Program Ended");   
         
     }
 }
