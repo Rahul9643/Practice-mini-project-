@@ -6,6 +6,7 @@ public class My{
         String choice;
         do{
         int no, rev=0,r,a;
+        int sum = 0;    
         System.out.print("Enter any number :- ");
         no= sc.nextInt();
         
@@ -13,9 +14,12 @@ public class My{
         while(no>0){
             r=no%10;
             rev=rev*10+r;
+            sum = sum+r; // sum of reverse number 
             no=no/10;
         }
         System.out.println("Reverse :- " +rev);
+        System.out.println("Sum :- "+sum); //print sum the reverse number 
+            
         System.out.print("Reverse Another number? (yes/no) :- ");  
         choice = sc.next();
             
