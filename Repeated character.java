@@ -1,18 +1,28 @@
 import java.util.Scanner;
 
 public class RepeatedCharacterCount {
+    static void p(String print){
+        System.out.print(print);
+    }
+    static void pl(String println){
+        System.out.println(println);
+    }
+    
+    
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        String choice;
+        do{
 
-        System.out.println("Enter a paragraph:");
+        p("Enter a paragraph:- ");
         String paragraph = sc.nextLine();
 
         paragraph = paragraph.toLowerCase();
 
         char[] ch = paragraph.toCharArray();
 
-        System.out.println("\nRepeated characters count:");
+        pl("Repeated characters count:");
 
         for (int i = 0; i < ch.length; i++) {
             int count = 1;
@@ -28,8 +38,17 @@ public class RepeatedCharacterCount {
             }
 
             if (count > 1) {
-                System.out.println(ch[i] + " = " + count);
+                pl(ch[i] + " = " + count);
             }
+            
+           
+            
         }
+         pl("another paragraph? (yes/no)");
+            choice = sc.nextLine();
+       
+        }
+         while(choice.equalsIgnoreCase("yes"));
+        pl("program ended");
     }
 }
